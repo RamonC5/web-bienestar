@@ -12,7 +12,7 @@ interface CardServiceListProps {
 
 const CardServiceList: React.FC<CardServiceListProps> = ({ cards }) => {
   return (
-    <ul className="flex flex-wrap justify-start gap-4">
+    <ul className="flex flex-wrap justify-center gap-4">
       {cards.map((card, index) => (
         <CardService
           key={index}

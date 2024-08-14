@@ -20,6 +20,7 @@ const config: Config = {
         color_text: 'var(--color-text)',            // Dark Gray
         hover: 'var(--color-hover)',          // Hover Color
         rating: 'var(--color-rating)',        // Rating color       // Rating color
+        "background-photo": "linear-gradient(#D482FF, #80A7FF)"
       },
       fontFamily: {
         sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'], // Reemplaza 'Roboto' con la fuente deseada

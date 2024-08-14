@@ -8,9 +8,9 @@ interface RootLayoutProps {
 
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
-        <div className="container">
+        <div>
           {children}
         </div>
       </body>

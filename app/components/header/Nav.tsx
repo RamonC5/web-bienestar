@@ -10,10 +10,10 @@ const Nav = () => (
     <div className="text-xs font-bold">MyApp</div>
     <div className="hidden md:flex justify-end space-x-4">
       <NavLink href="/">Inicio</NavLink>
-      <NavLink href="/about">Especialistas</NavLink>
+      <NavLink href="/especialistas">Especialistas</NavLink>
       <NavLink href="/contact">Para Profesionales</NavLink>
-      <NavLink href="/contact">Servicios</NavLink>
-      <NavLink href="/public/Contact">Contacto</NavLink>
+      <NavLink href="/service">Servicios</NavLink>
+      <NavLink href="/contact">Contacto</NavLink>
     </div>
   </nav>
 );
