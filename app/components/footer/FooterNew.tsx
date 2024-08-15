@@ -10,12 +10,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Contáctanos</h3>
             <p className="flex items-center mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 11c.942 0 1.882-.218 2.732-.636a6.034 6.034 0 001.973-1.473l.72-.721m-5.425 2.83A3.5 3.5 0 1118 6.5a3.5 3.5 0 01-6.864 1.237 7.005 7.005 0 00-.782 3.763L7 11l4.5 4.5a3.5 3.5 0 11-5.122-5.122m8.004 4.31l2.722 2.722a6.034 6.034 0 01-3.472 1.348l-.68-.681a7.062 7.062 0 00-.92-.738 6.999 6.999 0 01-4.282-6.12L7 11l4.5 4.5z" />
-              </svg>
-              Calle Salud, 123, Ciudad, País
-            </p>
-            <p className="flex items-center mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.5-4.5m-4.5 4.5L12 7m6 0a9.934 9.934 0 01-2.648 6.651A9.944 9.944 0 0112 18a9.944 9.944 0 01-6.649-2.649A9.934 9.934 0 013 9m18 0h-6" />
               </svg>
               +123 456 7890
@@ -47,9 +41,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Enlaces Útiles</h3>
             <nav className="space-y-2">
                 <a href="/" className="block hover:text-white">Inicio</a>
-                <a href="/experts" className="block hover:text-white">Expertos</a>
-                <a href="/blog" className="block hover:text-white">Blog</a>
-                <a href="/pricing" className="block hover:text-white">Precios</a>
+                <a href="/especialistas" className="block hover:text-white">Expertos</a>
+                <a href="/precios" className="block hover:text-white">Precios</a>
             </nav>
           </div>
 
