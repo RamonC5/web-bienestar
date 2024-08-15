@@ -19,8 +19,8 @@ const config: Config = {
         secondary: 'var(--color-secondary)',  // Deep Teal
         color_text: 'var(--color-text)',            // Dark Gray
         hover: 'var(--color-hover)',          // Hover Color
-        rating: 'var(--color-rating)',        // Rating color       // Rating color
-        "background-photo": "linear-gradient(#D482FF, #80A7FF)"
+        button: 'var(--color-button)',
+        button_hover: 'var(--color-button-hover)'
       },
       fontFamily: {
         sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'], // Reemplaza 'Roboto' con la fuente deseada

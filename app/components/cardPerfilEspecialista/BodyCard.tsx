@@ -30,10 +30,15 @@ const BodyCard: React.FC<ProfessionalCardProps> = ({ name, specialty, price, cit
               <p className="text-gray-700">Precio: $50</p>
             </li>
           </ul>
+          <div className="block">
+            <a href="#booking" className="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-colors">
+              Reserva una Sesión
+            </a>
+          </div>
         </div>
       </section>
           <section className="xl:mx-1 xl:w-1/2 sm:mt-6 xl:mt-0 bg-white xl:px-6 xl:py-7 rounded-md">
-          <h2 className="text-2xl font-bold mb-4">{'Horario'}</h2>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-6">{'Horario'}</h2>
                 <WeeklyScheduleTable />
           </section>
         </div>

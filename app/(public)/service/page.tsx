@@ -1,5 +1,5 @@
-import Footer from "@/app/components/footer/Footer";
-import Header from "@/app/components/header/Header";
+import Footer from "@/app/components/footer/FooterNew";
+import Header from "@/app/components/header/HeaderNew";
 import PlanSelector from "@/app/components/toogleService/PlanSelector";
 
 const ServicePage : React.FC = async () => {

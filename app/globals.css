@@ -10,6 +10,8 @@
   --color-text: #666666;       /* Dark Gray */
   --color-hover: #444444;       /* Hover Color */
   --color-rating: #ee8d0b;     /* Rating Color */
+  --color-button: #6366f1;
+  --color-button-hover: #6366f1;
 }
 
 @media (prefers-color-scheme: dark) {

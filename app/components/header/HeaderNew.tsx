@@ -35,7 +35,7 @@ const Header = () => {
 
           {/* Sign In / Register Button */}
           <div className="hidden md:flex ml-4">
-            <a href="/login" className="px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700">Iniciar Sesión</a>
+            <a href="/login" className="px-4 py-2 bg-indigo-500 text-white rounded-full hover:bg-indigo-600 transition-colors">Iniciar Sesión</a>
           </div>
         </div>
       </div>

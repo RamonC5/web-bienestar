@@ -3,9 +3,6 @@ import '../../globals.css';
 import Footer from '@/app/components/footer/FooterNew';
 
 import React from 'react';
-
-import ProfessionalsList from '@/app/components/cardsEspecialistas/ProfessionalsList';
-import ContactForm from '@/app/components/cardsEspecialistas/ContactForm';
 import ExpertListingPage from '@/app/components/cardsEspecialistas/ProfessionalsListNew';
 
 

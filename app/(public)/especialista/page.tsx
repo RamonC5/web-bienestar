@@ -1,11 +1,10 @@
-import Header from '@/app/components/header/Header';
+import Header from '@/app/components/header/HeaderNew';
 import '../../globals.css';
-import Footer from '@/app/components/footer/Footer';
+import Footer from '@/app/components/footer/FooterNew';
 
 import React from 'react';
 
 import ProfileSection from '@/app/components/cardPerfilEspecialista/ProfileSection';
-import ExpertPage from '@/app/components/cardPerfilEspecialista/ExpertPageNew';
 
 const profesional =   {
   name: "Kelsie Meyer",

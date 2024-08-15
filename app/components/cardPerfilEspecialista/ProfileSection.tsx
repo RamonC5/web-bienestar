@@ -8,6 +8,7 @@ import { ProfessionalCardProps } from './UserProfile';
 import BodyCard from './BodyCard';
 import EstrellaCard from '../estrella/Estrella';
 import ProfileDetails from './ProfileDetails';
+import { AcademicCapIcon } from '@heroicons/react/outline';
 
 const ProfileSection : React.FC<ProfessionalCardProps> = ({ name, specialty, price, city, rating,description, imageUrl, fondoUrl, link }) => {
 
@@ -62,54 +63,47 @@ const ProfileSection : React.FC<ProfessionalCardProps> = ({ name, specialty, pri
             <p className="text-sm">{['Inglés'].join(', ')}</p>
           </div>
           <div className="block">
-            <a href="#booking" className="mt-4 inline-block bg-green-600 text-white px-6 py-2 rounded-full">
+            <a href="#booking" className="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-colors">
               Reserva una Sesión
             </a>
             </div>
           </div>
         </div>
       </section>
-             {/* Detailed Biography and Credentials */}
-    <section className="py-16 bg-gray-100">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
-        {/* Text Section */}
-        <div className="lg:w-2/3">
-          <h2 className="text-3xl font-bold text-green-700 mb-4">Conoce a Dr. Maria Gómez</h2>
-          <p className="text-lg text-gray-800 leading-relaxed mb-6">
-            Soy psicóloga clínica con más de 15 años de experiencia ayudando a personas a superar la
-            ansiedad y otros trastornos emocionales. Graduada de la Universidad de Madrid con certificaciones en terapia
-            cognitivo-conductual, me dedico a guiar a mis pacientes hacia una vida más equilibrada y plena.
-          </p>
+      <section className="py-16 bg-gradient-to-r from-indigo-50 to-indigo-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Sección "Sobre mí" */}
+          <div>
+            <h2 className="text-4xl font-extrabold text-green-700 mb-4">Conoce a Dr. Maria Gómez</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Soy psicóloga clínica con más de 15 años de experiencia ayudando a personas a superar la
+              ansiedad y otros trastornos emocionales. Graduada de la Universidad de Madrid con certificaciones en terapia
+              cognitivo-conductual, me dedico a guiar a mis pacientes hacia una vida más equilibrada y plena.
+            </p>
+          </div>
 
-          {/* Interactive/Highlight Section */}
-          <div className="bg-green-50 p-6 rounded-lg shadow-md mb-6">
+          {/* Sección "Experiencia y Logros" */}
+          <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold text-green-700 mb-4">Experiencia y Logros</h3>
-            <ul className="list-none space-y-3">
+            <ul className="list-none space-y-4">
               <li className="flex items-start">
-                <svg className="h-6 w-6 text-green-500 flex-shrink-0 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-11a1 1 0 112 0v4a1 1 0 01-2 0V7zm1 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
+                <AcademicCapIcon className="h-6 w-6 text-green-500 flex-shrink-0 mr-3" />
                 <span className="text-gray-800">Doctorado en Psicología Clínica - Universidad de Madrid</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-6 w-6 text-green-500 flex-shrink-0 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-11a1 1 0 112 0v4a1 1 0 01-2 0V7zm1 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
+                <AcademicCapIcon className="h-6 w-6 text-green-500 flex-shrink-0 mr-3" />
                 <span className="text-gray-800">Certificación en Terapia Cognitivo-Conductual</span>
               </li>
               <li className="flex items-start">
-                <svg className="h-6 w-6 text-green-500 flex-shrink-0 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-11a1 1 0 112 0v4a1 1 0 01-2 0V7zm1 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
-                </svg>
+                <AcademicCapIcon className="h-6 w-6 text-green-500 flex-shrink-0 mr-3" />
                 <span className="text-gray-800">Más de 15 años de experiencia en práctica privada</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
         <div className="py-6 bg-gray-100">
             <BodyCard name={name}
                   specialty={specialty}
@@ -120,7 +114,6 @@ const ProfileSection : React.FC<ProfessionalCardProps> = ({ name, specialty, pri
                   imageUrl={imageUrl}
                   link={link} fondoUrl={''}/>
         </div>
-        
       </div>
     </section>
   );
