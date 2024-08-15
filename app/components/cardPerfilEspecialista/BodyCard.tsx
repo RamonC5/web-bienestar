@@ -32,10 +32,9 @@ const BodyCard: React.FC<ProfessionalCardProps> = ({ name, specialty, price, cit
           </ul>
         </div>
       </section>
-          <section className="mx-1 xl:w-1/2">
-            <Section  title="Horario">
+          <section className="xl:mx-1 xl:w-1/2 sm:mt-6 xl:mt-0 bg-white xl:px-6 xl:py-7 rounded-md">
+          <h2 className="text-2xl font-bold mb-4">{'Horario'}</h2>
                 <WeeklyScheduleTable />
-            </Section>
           </section>
         </div>
         

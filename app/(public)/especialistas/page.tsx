@@ -16,9 +16,8 @@ const EspecialistsPage: React.FC = async () => {
   return (
     <div className='flex flex-col min-h-screen'>
       <Header />
-        <main >
+        <main className="p-8 flex-grow mx-auto container ">
           <ExpertListingPage/>
-        
         </main>
       <Footer />
     </div>

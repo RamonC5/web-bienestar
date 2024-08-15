@@ -1,6 +1,7 @@
 // components/WeeklyScheduleTable.tsx
 import React from 'react';
-import { weeklySchedule } from '../cardPerfilEspecialista/Scheduler';
+import { weeklySchedule } from '../cardPerfilEspecialista/UserProfile';
+
 
 
 

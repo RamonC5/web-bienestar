@@ -3,10 +3,8 @@ import '../../globals.css';
 import Footer from '@/app/components/footer/Footer';
 
 import React from 'react';
-import BodyCard from '@/app/components/cardPerfilEspecialista/BodyCard';
 
 import ProfileSection from '@/app/components/cardPerfilEspecialista/ProfileSection';
-import { useProfile } from '@/app/components/cardPerfilEspecialista/UserProfile';
 import ExpertPage from '@/app/components/cardPerfilEspecialista/ExpertPageNew';
 
 const profesional =   {
@@ -26,7 +24,7 @@ const EspecialistPage: React.FC = async () => {
   return (
     <div className='flex flex-col min-h-screen'>
       <Header />
-      <main className="min-h-screen container mx-auto  pb-2">
+      <main  className="px-8 flex-grow mx-auto container ">
         <div className="bg-slate-200">
         <ProfileSection  name={profesional.name}
         specialty={profesional.specialty}
@@ -37,7 +35,6 @@ const EspecialistPage: React.FC = async () => {
         imageUrl={profesional.imageUrl}
         fondoUrl={profesional.fondoUrl}
         link={profesional.link}/>
-<ExpertPage/>
         </div>
       </main>
       <Footer />
