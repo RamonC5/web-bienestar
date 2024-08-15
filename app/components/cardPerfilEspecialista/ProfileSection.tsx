@@ -106,13 +106,6 @@ const ProfileSection : React.FC<ProfessionalCardProps> = ({ name, specialty, pri
               </li>
             </ul>
           </div>
-
-          {/* Call to Action */}
-          <div className="mt-8">
-            <a href="/contact" className="bg-green-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700 transition duration-300">
-              Agenda una Consulta
-            </a>
-          </div>
         </div>
       </div>
     </div>
