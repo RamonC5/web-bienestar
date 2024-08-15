@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import EstrellaCard from '../estrella/Estrella';
 import Link from 'next/link';
-
+import { StarIcon, MapIcon, DeviceMobileIcon, DesktopComputerIcon, LocationMarkerIcon, BriefcaseIcon } from '@heroicons/react/outline';
+import Image from 'next/image';
 export interface Expert {
     id: number;
     name: string;
@@ -459,48 +460,68 @@ export interface Expert {
           {/* Expert Listing */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredExperts.map((expert) => (
-                        <div
-                        key={expert.id}
-                        className="relative bg-white rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl"
-                      >
-                        {/* Image Section */}
-                        <div className="relative">
-                          <img
-                            src={expert.photo}
-                            alt={expert.name}
-                            className="w-full h-56 object-cover"
-                          />
-                          <div className="p-4 bg-white">
-                            <h3 className="text-2xl font-bold text-gray-900">{expert.name}</h3>
-                            <p className="text-sm font-medium text-sky-500">{expert.category}</p>
-                          </div>
-                        </div>
-                  
-                        {/* Info Section */}
-                        <div className="p-6 bg-gray-50">
-                          <div className="flex items-center mb-3">
-                            {/* Replace with your rating component */}
-                            <EstrellaCard rating={expert.rating}/>
-                          </div>
-                          <p className="text-sm text-gray-700 mb-4">{expert.specialty}</p>
-                  
-                          {/* Modern Price and Button */}
-                          <div className="flex justify-between items-center">
-                            <div className="text-left">
-                              <p className="text-2xl font-extrabold text-gray-900 leading-tight">${expert.price}</p>
-                              <p className="text-xs text-gray-500 uppercase tracking-wider">Por sesión</p>
-                            </div>
-                            <Link
-                              href={`/especialista/${expert.id}`}
-                              className="bg-sky-500 text-white font-semibold text-center px-4 py-2 rounded-full shadow-lg transform transition-all hover:bg-sky-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-sky-400"
-                              aria-label={`View profile of ${expert.name}`}
-                            >
-                              Ver Perfil
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-              
+                               <div className="bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105 max-w-sm">
+                               {/* Image Section */}
+                              <div className="relative w-full h-36">
+                                <Image
+                                  src={expert.photo}
+                                  alt={expert.name}
+                                  layout="fill"
+                                  objectFit="cover"
+                                  objectPosition="center"
+                                  className="w-full h-full"
+                                />
+                              </div>
+                               {/* Content Section */}
+                               <div className="flex flex-col justify-between p-4 w-full">
+                               <div className="flex justify-between items-center mb-2">
+                                  <h2 className="text-xl font-bold text-gray-900">{expert.name}</h2>
+                                  <p className="text-xl font-extrabold text-gray-900">${expert.price}</p>
+                                </div>
+                                <div className="flex justify-between items-center mb-2">
+                                  <EstrellaCard rating={expert.rating} />
+                                  <p className="text-xs text-gray-500 uppercase tracking-wider mb-4">Por sesión</p>
+                                </div>
+                                
+                                 <div className="bg-gray-100 p-3 rounded-md mb-3">
+                                   <div className="grid grid-cols-3 gap-2 text-center">
+                                     {/* Location */}
+                                     <div>
+                                       <LocationMarkerIcon className="h-5 w-5 text-indigo-500 mx-auto" />
+                                       <p className="text-gray-500 text-xs mt-1">Localización</p>
+                                       <span className="text-gray-700 text-sm">{'Santa Cruz de Tenerife'}</span>
+                                     </div>                     
+                                     {/* Mode */}
+                                     <div>
+                                       <DesktopComputerIcon className="h-5 w-5 text-indigo-500 mx-auto" />
+                                       <p className="text-gray-500 text-xs mt-1">Modalidad</p>
+                                       <span className="text-gray-700 text-sm">{expert.mode}</span>
+                                     </div>
+                         
+                                     {/* Profession */}
+                                     <div>
+                                       <BriefcaseIcon className="h-5 w-5 text-indigo-500 mx-auto" />
+                                       <p className="text-gray-500 text-xs mt-1">Profesión</p>
+                                       <span className="text-gray-700 text-sm">{expert.category}</span>
+                                     </div>
+                                   </div>
+                                 </div>
+                         
+                                 {/* Action Links */}
+                                 <div className="flex justify-between mt-2">
+                                   <Link href={`/especialistas`} legacyBehavior>
+                                     <a className="bg-indigo-500 text-white py-1 px-3 rounded-md hover:bg-indigo-600 transition-colors text-center text-sm">
+                                       Saber más
+                                     </a>
+                                   </Link>
+                                   <Link href={`/especialistas`} legacyBehavior>
+                                     <a className="bg-green-500 text-white py-1 px-3 rounded-md hover:bg-green-600 transition-colors text-center text-sm">
+                                       Contactar
+                                     </a>
+                                   </Link>
+                                 </div>
+                               </div>
+                             </div>
             ))}
           </div>
         </div>
