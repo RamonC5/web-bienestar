@@ -21,18 +21,6 @@ const Header = () => {
             <a href="/contact" className="text-gray-900 hover:text-green-600">Contacto</a>
           </nav>
 
-          {/* Search Bar */}
-          <div className="flex items-center">
-            <div className="relative">
-              <input
-                type="text"
-                className="w-full pl-10 pr-4 py-2 rounded-full bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="Buscar expertos"
-              />
-              <SearchIcon className="absolute left-3 top-2.5 h-5 w-5 text-gray-500" />
-            </div>
-          </div>
-
           {/* Sign In / Register Button */}
           <div className="hidden md:flex ml-4">
             <a href="/login" className="px-4 py-2 bg-indigo-500 text-white rounded-full hover:bg-indigo-600 transition-colors">Iniciar Sesión</a>
