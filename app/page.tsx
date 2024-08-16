@@ -1,5 +1,5 @@
 import './globals.css';
-import Header from "./components/header/HeaderNew";
+import Header from "./components/header/Header";
 import Footer from './components/footer/FooterNew';
 import HeroSection from './components/inicial/HeroSection';
 import ExpertCategories from './components/inicial/ExpertSection';

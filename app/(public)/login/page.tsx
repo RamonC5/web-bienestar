@@ -1,5 +1,5 @@
 import Footer from "@/app/components/footer/FooterNew";
-import Header from "@/app/components/header/HeaderNew";
+import Header from "@/app/components/header/Header";
 import LoginForm from "@/app/components/login/LoginForm";
 import PlanSelector from "@/app/components/toogleService/PlanSelector";
 

@@ -8,7 +8,7 @@ import InputField from "../contactForm/InputField";
 const LoginForm: React.FC = () => (
     <section className="p-8 max-w-2xl min-w-2xl mx-auto bg-white rounded-lg shadow">
       <h2 className="text-3xl font-bold mb-6 text-center">Acceder</h2>
-      <form action="#" method="post">
+      <form action="/dashboard" method="post">
         <div className="grid grid-cols-1 gap-6">
           <InputField
             id="usuario"
